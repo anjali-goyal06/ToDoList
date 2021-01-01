@@ -1,0 +1,64 @@
+
+#heading{
+    color : #000025;
+    text-align: center;
+
+}
+body{
+    color : #000025;
+    background-color:#ededed;
+}
+
+
+
+#divForm{
+    float: left;
+    padding  :15px;
+    text-align: center;
+    background-color: #4d004d;
+    color: white;
+    margin-left: 10px;
+    width : 300px;
+    border-radius: 15px;
+    font-size: medium;
+}
+
+form , #trueState{
+    float: none;
+    text-align: center;
+    margin  :25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15px;
+    font-size: medium;
+}
+
+
+input
+{
+padding  :15px;
+font-size: medium;
+background-color: #ededed;
+border:none;
+outline: none;
+border-bottom: 1px solid black;
+border-radius:5px;
+}
+
+input[type="submit"]{
+    background-color: #4d004d;
+    color:white;
+    margin-left: 0px;
+}
+
+#completeButton{
+    padding  :15px;
+    border:none;
+    font-size: medium;
+    background-color: #4d004d;
+    color:white;
+    margin-left: 0px;
+    width:120px;
+    border-radius:15px;
+    outline: none;
+}

@@ -1,0 +1,32 @@
+h1{
+    color :#000025
+}
+
+p{
+    color : #000025
+}
+label{
+    color: #000025
+}
+
+input{
+    color: red;
+    border : none;
+    outline : none;
+    border-radius:5px;
+}
+
+button[type="submit"]{
+    background-color: #4d004d;
+}
+
+
+a{
+    color : darkblue;
+}
+
+
+td{
+    text-align: center;
+    width: 50%;
+}

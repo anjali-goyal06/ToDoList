@@ -1,0 +1,32 @@
+  
+<br>
+
+<div class="dropdown" style="float: right; margin-top: 0px;margin-right: 0px;" >
+  <button class="btn btn-primary dropdown-toggle" type="button"  
+  data-toggle="dropdown"  style="border-radius: 30px; padding: 10px;width: 45px;background-color: #4d004d;">
+  <%= user.name.charAt(0) %>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/user/profile">Account</a>
+    <a class="dropdown-item" href="/user/profile">Edit Account</a>
+    <a class="dropdown-item" href="/user/logout">Logout</a>
+  </div>
+</div>
+
+  <div>
+  <p class="lead mb-3" style="font-weight:400;">Welcome <%= user.name %></p>
+  </div>
+  
+  
+
+<div class="row mt-5" >
+    <div class="col-md-6 m-auto" >
+      <div class="card card-body text-center" style="background-color: #ededed;border : none;" >
+        
+        <h1 style="color : #000025;">List  </h1><br>
+        <a href="/task" class="btn btn-primary btn-block mb-2" style="background-color: #4d004d;">
+          Add Events </a><br>
+       
+      </div>
+    </div>
+</div>

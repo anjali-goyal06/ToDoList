@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>  TO DO LIST    </title>
+        <link href="/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <br>
+        <h1 id="heading">  To Do List  </h1>
+        
+
+        
+        
+        <% for(var i=0 ; i<newListItems.length ; i++){   %> 
+            <% if(  !newListItems[i].isCompleted) { %>
+                <form method="post" action="/task">
+                    
+                        <div id="divForm"><%= newListItems[i].text %> </div> 
+                        <button type="submit"  id="completeButton" name="complete"
+                         value="<%= newListItems[i].text  %>">  Completed </button>                   
+                </form>
+              <% } else{ %>
+             <div id="trueState">
+                <div id="divForm" style="background-color: blueviolet;">
+                    <%= newListItems[i].text  %>
+                 </div> 
+                <button id="completeButton" style="background-color: blueviolet;"">  Done </button>
+            </div>
+             <% } %>   
+         <% } %>   
+            
+
+
+        <br>  
+        <form method="post" action="/task">
+            <input type="text" name="text" id="text_id" >
+            <input type="submit" value="Add">
+            
+        </form>
+
+
+    </body>
+</html>
